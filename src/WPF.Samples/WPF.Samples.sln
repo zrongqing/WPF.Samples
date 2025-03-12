@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeListViewExample", "TreeListViewExample\TreeListViewExample.csproj", "{83767D69-C98B-48A0-8E58-7670603EE8B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeGridDemo", "TreeGridDemo\TreeGridDemo.csproj", "{99E10DAF-2271-4A57-9C1C-BFEF60F96622}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeDemo", "TreeDemo\TreeDemo.csproj", "{5CA05135-D73B-49C4-B0F6-8B17931FFE5F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83767D69-C98B-48A0-8E58-7670603EE8B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83767D69-C98B-48A0-8E58-7670603EE8B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83767D69-C98B-48A0-8E58-7670603EE8B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83767D69-C98B-48A0-8E58-7670603EE8B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99E10DAF-2271-4A57-9C1C-BFEF60F96622}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99E10DAF-2271-4A57-9C1C-BFEF60F96622}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99E10DAF-2271-4A57-9C1C-BFEF60F96622}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99E10DAF-2271-4A57-9C1C-BFEF60F96622}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CA05135-D73B-49C4-B0F6-8B17931FFE5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CA05135-D73B-49C4-B0F6-8B17931FFE5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CA05135-D73B-49C4-B0F6-8B17931FFE5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CA05135-D73B-49C4-B0F6-8B17931FFE5F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

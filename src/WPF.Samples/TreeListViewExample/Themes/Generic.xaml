@@ -1,0 +1,82 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:TreeListViewExample"
+                    >
+    <Style TargetType="{x:Type local:TreeListView}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:TreeListView}">
+                    <Grid>
+                        <!-- 列标题 -->
+                        <GridViewHeaderRowPresenter 
+                            Columns="{TemplateBinding Columns}"
+                            Margin="0,0,0,0"
+                            SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                    
+                        <!-- 树形内容区域 -->
+                        <ScrollViewer VerticalScrollBarVisibility="Auto">
+                            <ItemsPresenter/>
+                        </ScrollViewer>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="ItemTemplate">
+            <Setter.Value>
+                <!-- 多列数据模板 -->
+                <HierarchicalDataTemplate ItemsSource="{Binding Children}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="100"/>
+                            <ColumnDefinition Width="150"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="{Binding Name}" Grid.Column="0"/>
+                        <TextBlock Text="{Binding Type}" Grid.Column="1"/>
+                        <TextBlock Text="{Binding ModifiedDate}" Grid.Column="2"/>
+                    </Grid>
+                </HierarchicalDataTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style TargetType="{x:Type TreeViewItem}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TreeViewItem}">
+                    <StackPanel>
+                        <!-- 节点内容 -->
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/> <!-- 展开按钮 -->
+                                <ColumnDefinition Width="*"/>    <!-- 第一列 -->
+                                <ColumnDefinition Width="100"/>  <!-- 第二列 -->
+                                <ColumnDefinition Width="150"/>  <!-- 第三列 -->
+                            </Grid.ColumnDefinitions>
+                        
+                            <!-- 展开按钮 -->
+                            <ToggleButton x:Name="Expander" 
+                                          IsChecked="{Binding IsExpanded, RelativeSource={RelativeSource TemplatedParent}}"
+                                          Width="15" Height="15"/>
+                        
+                            <!-- 绑定数据到各列 -->
+                            <ContentPresenter Content="{TemplateBinding Header}" 
+                                              Grid.Column="1"/>
+                            <TextBlock Text="{Binding Type}" Grid.Column="2"/>
+                            <TextBlock Text="{Binding ModifiedDate}" Grid.Column="3"/>
+                        </Grid>
+                    
+                        <!-- 子节点 -->
+                        <ItemsPresenter x:Name="ItemsHost" Margin="20,0,0,0"/>
+                    </StackPanel>
+                
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="HasItems" Value="false">
+                            <Setter TargetName="Expander" Property="Visibility" Value="Hidden"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
