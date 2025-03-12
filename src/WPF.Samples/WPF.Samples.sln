@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeGridDemo", "TreeGridDem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeDemo", "TreeDemo\TreeDemo.csproj", "{5CA05135-D73B-49C4-B0F6-8B17931FFE5F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "syncfusion.Samples", "syncfusion.Samples\syncfusion.Samples.csproj", "{1EFA3003-5504-4CEC-B92B-19C4E342ECDA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{5CA05135-D73B-49C4-B0F6-8B17931FFE5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CA05135-D73B-49C4-B0F6-8B17931FFE5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CA05135-D73B-49C4-B0F6-8B17931FFE5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EFA3003-5504-4CEC-B92B-19C4E342ECDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EFA3003-5504-4CEC-B92B-19C4E342ECDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EFA3003-5504-4CEC-B92B-19C4E342ECDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EFA3003-5504-4CEC-B92B-19C4E342ECDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

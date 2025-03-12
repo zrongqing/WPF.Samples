@@ -9,7 +9,10 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Telerik.Windows.Controls.GridView.for.Wpf" Version="2023.2.718" />
+        <PackageReference Include="Telerik.Windows.Controls.GridView.for.Wpf" Version="2023.2.718"/>
+        <PackageReference Include="Telerik.Windows.Controls.for.Wpf" Version="2023.2.718"/>
+        <PackageReference Include="Telerik.Windows.Controls.Input.for.Wpf" Version="2023.2.718"/>
+        <PackageReference Include="Telerik.Windows.Data.for.Wpf" Version="2023.2.718"/>
     </ItemGroup>
 
 </Project>

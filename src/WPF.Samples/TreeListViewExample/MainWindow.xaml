@@ -10,33 +10,45 @@
     Width="800"
     Height="450"
     mc:Ignorable="d"
-    d:DataContext="{d:DesignInstance local:MyDataContext}"
-    >
-    
+    d:DataContext="{d:DesignInstance local:MyDataContext}">
+
     <!-- Resources -->
     <Window.Resources>
         <Style x:Key="TextBlockStyle" TargetType="{x:Type TextBlock}">
-            <Setter Property="Margin" Value="3 0 3 0"/>
-        </Style>
-        <Style x:Key="TextBlockBoldStyle" TargetType="{x:Type TextBlock}" BasedOn="{StaticResource TextBlockStyle}">
-            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Margin" Value="3 0 3 0" />
         </Style>
     </Window.Resources>
-    
+
     <Grid x:Name="LayoutRoot">
-        <telerik:RadTreeListView x:Name="RadTreeListView1"
-                                 IsReadOnly="True"
-                                 ItemsSource="{Binding WarehouseData}"
-                                 IsExpandedBinding="{Binding IsExpanded, Mode=TwoWay}"
-                                 Width="600" 
-                                 MinHeight="300"
-                                 Height="550"
-                                 CanUserFreezeColumns="False"
-                                 RowIndicatorVisibility="Collapsed"
-                                 ColumnWidth="*">
-            <telerik:RadTreeListView.ChildTableDefinitions>
-                <telerik:TreeListViewTableDefinition ItemsSource="{Binding Items}" />
-            </telerik:RadTreeListView.ChildTableDefinitions>
-        </telerik:RadTreeListView>
+
+        <!-- <telerik:RadTreeListView x:Name="RadTreeListView1" -->
+        <!--                          IsReadOnly="True" -->
+        <!--                          ItemsSource="{Binding WarehouseData}" -->
+        <!--                          IsExpandedBinding="{Binding IsExpanded, Mode=TwoWay}" -->
+        <!--                          Width="600"  -->
+        <!--                          MinHeight="300" -->
+        <!--                          Height="550" -->
+        <!--                          CanUserFreezeColumns="False" -->
+        <!--                          RowIndicatorVisibility="Collapsed" -->
+        <!--                          ColumnWidth="*"> -->
+        <!--     <telerik:RadTreeListView.ChildTableDefinitions> -->
+        <!--         <telerik:TreeListViewTableDefinition ItemsSource="{Binding Items}" /> -->
+        <!--     </telerik:RadTreeListView.ChildTableDefinitions> -->
+        <!-- </telerik:RadTreeListView> -->
+
+        <!-- <telerik:RadPathButton MinWidth="80" -->
+        <!--                        Margin="0 0 15 0" -->
+        <!--                        HorizontalContentAlignment="Center" -->
+        <!--                        Content="Back" -->
+        <!--                        ContentPlacement="Right" -->
+        <!--                        Padding="10 5" -->
+        <!--                        PathGeometry="M6,0L12,0L6,6L12,12L6,12L0,6z"/> -->
+
+        <StackPanel>
+            <Button Content="123" />
+            <telerik:RadButton Content="12312" />
+            <telerik:Tile Content="asd" />
+            <telerik:RadGridView />
+        </StackPanel>
     </Grid>
 </Window>
