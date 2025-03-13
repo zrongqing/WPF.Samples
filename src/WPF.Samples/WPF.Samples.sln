@@ -8,6 +8,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeDemo", "TreeDemo\TreeDe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "syncfusion.Samples", "syncfusion.Samples\syncfusion.Samples.csproj", "{1EFA3003-5504-4CEC-B92B-19C4E342ECDA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TreeListView", "TreeListView", "{2E6D3540-69E7-4CE8-8A56-94C5D7BDEACB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeListVIew", "TreeListVIew\TreeListVIew.csproj", "{78772BF9-90D2-4489-BA00-2AB226CF6230}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,13 @@ Global
 		{1EFA3003-5504-4CEC-B92B-19C4E342ECDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EFA3003-5504-4CEC-B92B-19C4E342ECDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1EFA3003-5504-4CEC-B92B-19C4E342ECDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78772BF9-90D2-4489-BA00-2AB226CF6230}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78772BF9-90D2-4489-BA00-2AB226CF6230}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78772BF9-90D2-4489-BA00-2AB226CF6230}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78772BF9-90D2-4489-BA00-2AB226CF6230}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1EFA3003-5504-4CEC-B92B-19C4E342ECDA} = {2E6D3540-69E7-4CE8-8A56-94C5D7BDEACB}
+		{78772BF9-90D2-4489-BA00-2AB226CF6230} = {2E6D3540-69E7-4CE8-8A56-94C5D7BDEACB}
 	EndGlobalSection
 EndGlobal
