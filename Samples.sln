@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "syncfusion", "syncfusion", "{59A55C22-E625-44B0-B0FB-8557F266935D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "syncfusion.Samples", "syncfusion\syncfusion.Samples.csproj", "{2A57C29A-2900-4B68-B6C3-7FB42D353F8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SfTreeGrid", "SfTreeGrid\SfTreeGrid\SfTreeGrid.csproj", "{9A9DBE70-C973-40F2-901C-BC4C462F6E4E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2A57C29A-2900-4B68-B6C3-7FB42D353F8F} = {59A55C22-E625-44B0-B0FB-8557F266935D}
+		{9A9DBE70-C973-40F2-901C-BC4C462F6E4E} = {59A55C22-E625-44B0-B0FB-8557F266935D}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A57C29A-2900-4B68-B6C3-7FB42D353F8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A57C29A-2900-4B68-B6C3-7FB42D353F8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A57C29A-2900-4B68-B6C3-7FB42D353F8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A57C29A-2900-4B68-B6C3-7FB42D353F8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A9DBE70-C973-40F2-901C-BC4C462F6E4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A9DBE70-C973-40F2-901C-BC4C462F6E4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A9DBE70-C973-40F2-901C-BC4C462F6E4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A9DBE70-C973-40F2-901C-BC4C462F6E4E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
